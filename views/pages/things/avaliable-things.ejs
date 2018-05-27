@@ -1,0 +1,14 @@
+<div id="avaliable-things" v-cloak>
+
+  <h1>Things</h1>
+  <p>View avaliable items to borrow, or upload you own thinds</p>
+  <button>TODO</button>
+
+  <ul>
+    <li v-for="thing in things" @click="clickThing(thing.id)">{{ thing.label }}</li>
+  </ul>
+  <!-- <h1>TODO: Implement this page.</h1>
+  <p>(See also <em>assets/styles/pages/things/avaliable-things.less</em>, <em>assets/js/pages/things/avaliable-things.page.js</em>, and <em>api/controllers/things/view-avaliable-things.js</em>.)</p> -->
+
+</div>
+<%- /* Expose server-rendered data as window.SAILS_LOCALS :: */ exposeLocalsToBrowser() %>
